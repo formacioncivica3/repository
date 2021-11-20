@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Sidebar Menu  | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styl.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery.dataTables.min.js"></script>
+     <link rel="stylesheet" href="css/estilos.css">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class="fas fa-user-secret icon"></i>
+        <div class="logo_name">Formacion</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="#">
+          <i class='fas fa-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="Revistas.html" id="active">
+         <i class='fas fa-book-open' id="active" aria-hidden="true" ></i>
+         <span class="links_name">Revistas</span>
+       </a>
+       <span class="tooltip">Revistas</span>
+     </li>
+     <li>
+       <a href="sistema de biblioteca.html"  style="background-color: white;border-radius: 15px;">
+         <i class='fas fa-book' style="color: black; background-color: white;" ></i>
+         <span class="links_name" style="color: black; background-color: white;">Biblioteca</span>
+       </a>
+       <span class="tooltip">Biblioteca</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='fab fa-youtube' ></i>
+         <span class="links_name">Canal de la profesora</span>
+       </a>
+       <span class="tooltip">Canal de la profesora</span>
+     </li>
+
+     <li>
+       <a href="#">
+         <i class='fas fa-id-card' ></i>
+         <span class="links_name">Contactanos</span>
+       </a>
+       <span class="tooltip">Contactanos</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      
+	<header><center>
+		<div class="header-top">
+			<div class="navegacion">
+				<input style="background:  #ffffff; color: rgb(0, 0, 0); width: 300px; border-radius: 15px; border: 1px double rgb(255, 255, 255);" type="search" placeholder="Que te gustaria encontrar? ...." id="inputBusqueda">
+			</div>
+		</div></center>
+		<div class="search" id="search">
+			<table class="search-table" id="searchTable">
+				<thead>
+					<tr>
+						<td></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+                        
+						<td><a class="a" href="buscador.html">Inicio</a></td>
+					</tr>
+                    <tr>
+                        <td >1 Corazón. Diario de un niño</td>
+                        <td ><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Corazon_Amicis.pdf" >Click para leer</a></td>
+                        <td >Amicis, Edmundo de</td>
+                      </tr>
+                      <tr >
+                        <td >2 Tres cuentos de Las mil y una noches</td>
+                        <td ><a  class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/3Cuentos_LasMilNoches.pdf">Click para leer</a></td>
+                        <td >Anónimo</td>
+                      </tr>
+                      <tr >
+                        <td >3 Diez cuentos de Las mil y una noches</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/10Cuentos_LasMilNoches.pdf">Click para leer</a></td>
+                        <td >Anónimo</td>
+                      </tr>
+                      <tr >
+                        <td >4 Caballería roja</td>
+                        <td ><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CaballeriaRoja_Babel.pdf">Click para leer</a></td>
+                        <td >Babel, Isaac Emmanvilovich</td>
+                      </tr>
+                      <tr >
+                        <td >5 Alberto Savaruz</td>
+                        <td ><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Alberto_Savaruz-Honore_de_Balzac.pdf">Click para leer</a></td>
+                        <td >Balzac, Honoré de</td>
+                      </tr>
+                      <tr >
+                        <td >6 El asesinato</td>
+                        <td ><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Asesinato.pdf">Click para leer</a></td>
+                        <td >Chéjov, Antón</td>
+                      </tr><tr>
+                        <td >7 El jardín de los cerezos</td>
+                        <td ><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/JardinCerezos.pdf">Click para leer</a></td>
+                        <td >Chéjov, Antón</td>
+                      </tr>
+                      <tr >
+                        <td >8 El pabellón No. 6</td>
+                        <td> <a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Pabellon6.pdf">Click para leer</a></td>
+                        <td >Chéjov, Antón</td>
+                      </tr>
+                      <tr >
+                        <td >9 El misterio de Copper Beeches</td>
+                        <td ><a  class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/MisterioCopper_Doyle.pdf">Click para leer</a></td>
+                        <td>Conan Doyle, Arthur</td>
+                      </tr>
+                      <tr >
+                        <td>10 El misterio del valle Boscombe</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/MisterioValleBoscombe_Doyle.pdf">Click para leer</a></td>
+                        <td>Conan Doyle, Arthur</td>
+                      </tr>
+                    
+                      <tr >
+                        <td>11 El signo de los cuatro</td>
+                        <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/SignoCuatro_Doyle.pdf">Click para leer</a></td>
+                        <td>Conan Doyle, Arthur</td>
+                      </tr>
+                      <tr >
+                        <td>12 Espanto en las alturas</td>
+                        <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EspantoAlturas_Doyle.pdf">Click para leer</a></td>
+                        <td>Conan Doyle, Arthur</td>
+                      </tr>
+                    
+                      <tr >
+                        <td>13 Un escándalo en Bohemia</td>
+                        <td><a class="a"   target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EscandaloBohemia_Doyle.pdf">Click para leer</a></td>
+                        <td>Conan Doyle, Arthur</td>
+                      </tr>
+                      <tr >
+                        <td>14 El corazón de las tinieblas</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CorazonTinieblas_Conrad.pdf">Click para leer</a></td>
+                        <td>Conrad, Joseph</td>
+                      </tr>
+                      <tr >
+                        <td>15 La teoría de la evolución: El origen de las especies</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/TeoriaEvolucion-Darwin.pdf">Click para leer</a></td>
+                        <td>	Darwin, Charles</td>
+                      </tr>
+                      <tr>
+                        <td>16 Tartarín de Tarascón</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Tartarin_de_Tarascon-Alphonse_Daudet.pdf">Click para leer</a></td>
+                        <td>Daudet, Alphonse</td>
+                      </tr>
+                      <tr >
+                        <td>17 Proceso por asesinato</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ProcesoAsesinato.pdf">Click para leer</a></td>
+                        <td>Dickens, Charles</td>
+                      </tr>
+                      <tr >
+                        <td>18 Noches blancas</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/NochesBlancas.pdf">Click para leer</a></td>
+                        <td>Dostoievski, Fedor</td>
+                      </tr>
+                      <tr >
+                        <td>19 La reliquia</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Reliquia.pdf">Click para leer</a></td>
+                        <td>Eça de Queiroz, José María</td>
+                      </tr>
+                    
+                      <tr >
+                        <td>20 El anillo</td>
+                        <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Anillo.pdf">Click para leer</a></td>
+                        <td>Eichendorff, Joseph von</td>
+                      </tr>
+                        <tr >
+                          <td>21 Prometeo encadenado</td>
+                          <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/PrometeoEncadenado.pdf">Click para leer</a></td>
+                          <td>Esquilo</td>
+                        </tr>
+                    
+                        <tr >
+                          <td>22 Las troyanas</td>
+                          <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Troyanas.pdf">Click para leer</a></td>
+                          <td>Eurípides</td>
+                        </tr>
+                        <tr >
+                          <td>23 El cuento de la serpiente verde</td>
+                          <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/SerpienteVerde.pdf">Click para leer</a></td>
+                          <td>Goethe, Johann Wolfgang</td>
+                        </tr>
+                        <tr >
+                          <td>24 Diario de un loco</td>
+                          <td><a  class="a" target="_blank"href="">Click para leer</a></td>
+                          <td>Gogol, Nikolai</td>
+                        </tr>
+                    
+                        <tr >
+                          <td>25 El capote</td>
+                          <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Capote.pdf">Click para leer</a></td>
+                          <td>Gogol, Nikolai</td>
+                        </tr>
+                        <tr >
+                          <td>26 El retrato</td>
+                          <td><a class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Retrato.pdf">Click para leer</a></td>
+                          <td>Gogol, Nikolai</td>
+                        </tr>
+                    
+                        <tr >
+                          <td>27 La perspectiva Nevsky</td>
+                          <td><a  class="a"  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/PerspectivaNevsky.pdf">Click para leer</a></td>
+                          <td>Gogol, Nikolai</td>
+                        </tr>
+                        <tr>
+                          <td>28 El encuentro inesperado.</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EncuentroInesperado.pdf">Click para leer</a></td>
+                          <td>Hebel, Johann Peter</td>
+                        </tr>
+                        <tr >
+                          <td>29 Demian</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Demian_HermannHesse.pdf">Click para leer</a></td>
+                          <td>Hesse, Hermann</td>
+                        </tr>
+                    
+                        <tr >
+                          <td>30 El lobo estepario</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ElLoboEstepario.pdf">Click para leer</a></td>
+                          <td>El lobo estepario</td>
+                        </tr>
+                        <tr >
+                          <td>31 Siddhartha</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Siddhartha.pdf">Click para leer</a></td>
+                          <td>Hesse, Hermann</td>
+                        </tr>
+                        <tr>
+                          <td>32 Cuentos de miedo</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CuentosDeMiedo_Hoffmann.pdf">Click para leer</a></td>
+                          <td>Hoffmann, E.T.A.</td>
+                        </tr>
+                        <tr >
+                          <td>33 La Ilíada</td>
+                          <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Iliada.pdf">Click para leer</a></td>
+                          <td>Homero</td>
+                        </tr>
+                        <tr >
+                          <td>34 La Odisea</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Odisea.pdf">Click para leer</a></td>
+                          <td>Homero</td>
+                        </tr>
+                        <tr >
+                          <td>35 Bug Jargal</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Bug_Jargal-Victor_Hugo.pdf">Click para leer</a></td>
+                          <td>Hugo, Victor</td>
+                        </tr>    
+                        <tr >
+                          <td>36 Cuentos de la Alhambra. Dos leyendas</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CuentosAlhambra.pdf">Click para leer</a></td>
+                          <td>Irving, Washington</td>
+                        </tr>
+                            <tr >
+                          <td>37 La vuelta de tuerca</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/VueltaDeTuerca.pdf">Click para leer</a></td>
+                          <td>James, Henry</td>
+                        </tr>
+                        <tr >
+                          <td>38 La rosa amarilla</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/RosaAmarilla.pdf">Click para leer</a></td>
+                          <td>Jókai, Mor</td>
+                        </tr>
+                        <tr >
+                          <td>39 Una cruza</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Una_cruza-Franz_Kafka.pdf">Click para leer</a></td>
+                          <td>Kafka, Franz</td>
+                        </tr>
+                    
+                        <tr>
+                          <td>40 El carrito fantasma</td>
+                          <td><a class="a"  target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CarritoFantasma_Kipling.pdf">Click para leer</a></td>
+                          <td>Kipling, Rudyard</td>
+                        </tr>
+				</tbody>
+			</table>
+		</div>
+  </header>
+  <br><br>
+<style>
+
+  .table {
+
+    width: 80%;
+  }
+  
+  .td, .th {
+    border: 1px solid #E4E9F7;
+    padding: 8px;
+    border-radius: 15px;
+  }
+  .td{
+      color: white;
+  }
+  
+  .tr:nth-child(even) {
+    background-color: #E4E9F7;
+    color: rgb(0, 0, 0);
+  }
+  .tr{
+    background-color: rgb(0, 0, 0);
+
+  }
+  .d{
+      color: black;
+  }
+  .thead{
+    background-color: rgb(247, 207, 122);
+    color: rgb(0, 0, 0);
+
+
+  }
+  .td a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  td a{
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+
+  }
+  td{
+    padding: 8px;
+    border-radius: 15px;
+  }
+  </style>
+
+
+
+
+<center>
+
+<table class="table">
+  <thead class="thead">
+  <tr class="tr">
+    <th class="th td ">Libros</th>
+    <th class="th td"><a target="_blank">Links </a></th>
+    <th class="th td">Autor</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr class="tr">
+    <td class="td ">1 Corazón. Diario de un niño</td>
+    <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Corazon_Amicis.pdf" >Click para leer</a></td>
+    <td class="td ">Amicis, Edmundo de</td>
+  </tr>
+  <tr class="tr">
+    <td>2 Tres cuentos de Las mil y una noches</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/3Cuentos_LasMilNoches.pdf">Click para leer</a></td>
+    <td>Anónimo</td>
+  </tr>
+  <tr class="tr">
+    <td class="td ">3 Diez cuentos de Las mil y una noches</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/10Cuentos_LasMilNoches.pdf">Click para leer</a></td>
+    <td class="td ">Anónimo</td>
+  </tr>
+  <tr class="tr">
+    <td>4 Caballería roja</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CaballeriaRoja_Babel.pdf">Click para leer</a></td>
+    <td>Babel, Isaac Emmanvilovich</td>
+  </tr>
+  <tr class="tr" >
+    <td class="td ">5 Alberto Savaruz</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Alberto_Savaruz-Honore_de_Balzac.pdf">Click para leer</a></td>
+    <td class="td ">Balzac, Honoré de</td>
+  </tr>
+  <tr class="tr">
+    <td>6 El asesinato</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Asesinato.pdf">Click para leer</a></td>
+    <td>Chéjov, Antón</td>
+  </tr><tr class="tr">
+    <td class="td ">7 El jardín de los cerezos</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/JardinCerezos.pdf">Click para leer</a></td>
+    <td class="td ">Chéjov, Antón</td>
+  </tr>
+  <tr class="tr">
+    <td>8 El pabellón No. 6</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Pabellon6.pdf">Click para leer</a></td>
+    <td>Chéjov, Antón</td>
+  </tr>
+  <tr class="tr">
+    <td class="td ">9 El misterio de Copper Beeches</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/MisterioCopper_Doyle.pdf">Click para leer</a></td>
+    <td class="td " >Conan Doyle, Arthur</td>
+  </tr>
+  <tr class="tr">
+    <td>10 El misterio del valle Boscombe</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/MisterioValleBoscombe_Doyle.pdf">Click para leer</a></td>
+    <td class="td d ">Conan Doyle, Arthur</td>
+  </tr>
+
+  <tr class="tr">
+    <td class="td ">11 El signo de los cuatro</td>
+    <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/SignoCuatro_Doyle.pdf">Click para leer</a></td>
+    <td class="td ">Conan Doyle, Arthur</td>
+  </tr>
+  <tr class="tr">
+    <td>12 Espanto en las alturas</td>
+    <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EspantoAlturas_Doyle.pdf">Click para leer</a></td>
+    <td>Conan Doyle, Arthur</td>
+  </tr>
+
+  <tr class="tr">
+    <td class="td ">13 Un escándalo en Bohemia</td>
+    <td class="td "><a  target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EscandaloBohemia_Doyle.pdf">Click para leer</a></td>
+    <td class="td ">Conan Doyle, Arthur</td>
+  </tr>
+  <tr class="tr">
+    <td class="td d ">14 El corazón de las tinieblas</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CorazonTinieblas_Conrad.pdf">Click para leer</a></td>
+    <td>Conrad, Joseph</td>
+  </tr>
+  <tr class="tr">
+    <td class="td ">15 La teoría de la evolución: El origen de las especies</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/TeoriaEvolucion-Darwin.pdf">Click para leer</a></td>
+    <td class="td ">	Darwin, Charles</td>
+  </tr>
+  <tr class="tr">
+    <td>16 Tartarín de Tarascón</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Tartarin_de_Tarascon-Alphonse_Daudet.pdf">Click para leer</a></td>
+    <td>Daudet, Alphonse</td>
+  </tr>
+  <tr class="tr">
+    <td class="td ">17 Proceso por asesinato</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ProcesoAsesinato.pdf">Click para leer</a></td>
+    <td class="td ">Dickens, Charles</td>
+  </tr>
+  <tr class="tr">
+    <td>18 Noches blancas</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/NochesBlancas.pdf">Click para leer</a></td>
+    <td>Dostoievski, Fedor</td>
+  </tr>
+  <tr class="tr">
+    <td class="td ">19 La reliquia</td>
+    <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Reliquia.pdf">Click para leer</a></td>
+    <td class="td ">Eça de Queiroz, José María</td>
+  </tr>
+
+  <tr class="tr">
+    <td>20 El anillo</td>
+    <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Anillo.pdf">Click para leer</a></td>
+    <td>Eichendorff, Joseph von</td>
+  </tr>
+    <tr class="tr">
+      <td class="td ">21 Prometeo encadenado</td>
+      <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/PrometeoEncadenado.pdf">Click para leerr</a></td>
+      <td class="td ">Esquilo</td>
+    </tr>
+
+    <tr class="tr">
+      <td>22 Las troyanas</td>
+      <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Troyanas.pdf">Click para leer</a></td>
+      <td>Eurípides</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">23 El cuento de la serpiente verde</td>
+      <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/SerpienteVerde.pdf">Click para leer</a></td>
+      <td class="td ">Goethe, Johann Wolfgang</td>
+    </tr>
+    <tr class="tr">
+      <td>24 Diario de un loco</td>
+      <td><a target="_blank"href="">Click para leer</a></td>
+      <td>Gogol, Nikolai</td>
+    </tr>
+
+    <tr class="tr">
+      <td class="td ">25 El capote</td>
+      <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Capote.pdf">Click para leer</a></td>
+      <td class="td ">Gogol, Nikolai</td>
+    </tr>
+    <tr class="tr">
+      <td>26 El retrato</td>
+      <td><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Retrato.pdf">Click para leer</a></td>
+      <td>Gogol, Nikolai</td>
+    </tr>
+
+    <tr class="tr">
+      <td class="td ">27 La perspectiva Nevsky</td>
+      <td class="td "><a target="_blank"href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/PerspectivaNevsky.pdf">Click para leer</a></td>
+      <td class="td ">Gogol, Nikolai</td>
+    </tr>
+    <tr class="tr">
+      <td>28 El encuentro inesperado.</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/EncuentroInesperado.pdf">Click para leer</a></td>
+      <td>Hebel, Johann Peter</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">29 Demian</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Demian_HermannHesse.pdf">Click para leer</a></td>
+      <td class="td ">Hesse, Hermann</td>
+    </tr>
+
+    <tr class="tr">
+      <td>30 El lobo estepario</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ElLoboEstepario.pdf">Click para leer</a></td>
+      <td>El lobo estepario</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">31 Siddhartha</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Siddhartha.pdf">Click para leer</a></td>
+      <td class="td ">Hesse, Hermann</td>
+    </tr>
+    <tr class="tr">
+      <td>32 Cuentos de miedo</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CuentosDeMiedo_Hoffmann.pdf">Click para leer</a></td>
+      <td>Hoffmann, E.T.A.</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">33 La Ilíada</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Iliada.pdf">Click para leer</a></td>
+      <td class="td ">Homero</td>
+    </tr>
+    <tr class="tr">
+      <td>34 La Odisea</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Odisea.pdf">Click para leer</a></td>
+      <td>Homero</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">35 Bug Jargal</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Bug_Jargal-Victor_Hugo.pdf">Click para leer</a></td>
+      <td class="td ">Hugo, Victor</td>
+    </tr>    <tr class="tr">
+      <td>36 Cuentos de la Alhambra. Dos leyendas</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CuentosAlhambra.pdf">Click para leer</a></td>
+      <td>Irving, Washington</td>
+    </tr>
+        <tr class="tr">
+      <td class="td ">37 La vuelta de tuerca</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/VueltaDeTuerca.pdf">Click para leer</a></td>
+      <td class="td ">James, Henry</td>
+    </tr>
+    <tr class="tr">
+      <td>38 La rosa amarilla</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/RosaAmarilla.pdf">Click para leer</a></td>
+      <td>Jókai, Mor</td>
+    </tr>
+    <tr class="tr">
+      <td class="td ">39 Una cruza</td>
+      <td class="td "><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Una_cruza-Franz_Kafka.pdf">Click para leer</a></td>
+      <td class="td ">Kafka, Franz</td>
+    </tr>
+
+    <tr class="tr">
+      <td>40 El carrito fantasma</td>
+      <td><a target="_blank" href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/CarritoFantasma_Kipling.pdf">Click para leer</a></td>
+      <td>Kipling, Rudyard</td>
+    </tr>
+
+  </tbody>
+</table>
+  
+</center>
+</body>
+</html>
+  </section>
+  <script src="js/buscador.js"></script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/9954b508ee.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4534309a65.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -4,8 +4,7 @@ $("#inputBusqueda").keyup(function(){
 	consulta.search($(this).val()).draw();
 
 	$("header").css({
-		"height": "100vh",
-		"background": "rgba(0,0,0,0.5)"
+		"height": "30vh",
 	})
 
 	if ($("#inputBusqueda").val() == ""){
